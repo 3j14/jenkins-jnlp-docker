@@ -1,6 +1,6 @@
 # Jenkins Agent with Docker and Docker Compose
 
-![Docker Pulls](https://img.shields.io/docker/pulls/jonasdrotleff/jenkins-jnlp-docker)[https://hub.docker.com/r/jonasdrotleff/jenkins-jnlp-docker]
+[![Docker Pulls](https://img.shields.io/docker/pulls/jonasdrotleff/jenkins-jnlp-docker)](https://hub.docker.com/r/jonasdrotleff/jenkins-jnlp-docker)
 
 This image is based upon the Debian Buster JDK 11 version of
 [`jenkins/inbound-agent`](https://hub.docker.com/r/jenkins/inbound-agent/)
