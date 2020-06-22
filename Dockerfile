@@ -4,6 +4,7 @@ FROM jenkins/inbound-agent:$AGENT_VERSION
 ARG version=1.0.0
 LABEL Description="Inbound Jenkins Agent (JNLP) with Docker and Docker Compose" maintainer="jonas@drtlf.de" Version="$version"
 
+ARG DOCKER_GID=998
 ARG DOCKER_VERSION="5:19.03.11~3-0~debian-buster"
 ARG DOCKER_COMPOSE_VERSION="1.26.0"
 
@@ -33,6 +34,7 @@ RUN curl -sL \
     -o /usr/local/bin/docker-compose
 RUN chmod +x /usr/local/bin/docker-compose
 
+RUN groupmod -g $DOCKER_GID docker
 RUN usermod -aG docker jenkins
 
 USER jenkins
