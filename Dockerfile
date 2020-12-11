@@ -1,7 +1,7 @@
-ARG AGENT_VERSION=4.3-4-jdk11
+ARG AGENT_VERSION=4.6-1-jdk11
 FROM jenkins/inbound-agent:$AGENT_VERSION
 
-ARG version=1.0.0
+ARG version=1.1.1
 LABEL Description="Inbound Jenkins Agent (JNLP) with Docker and Docker Compose" maintainer="jonas@drtlf.de" Version="$version"
 
 ARG DOCKER_GID=998
